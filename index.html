@@ -1,18 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Selecao Bootstrap </title>
     <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-  </head>
-    <body>
-   <!--start nav-bar -->
-   
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!--start nav-bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Selecao</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 p-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Team</a>
+                    </li>
+                    <!-- start drop down -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <!-- end drop down -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Contact</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
     <!--end nav-bar -->
+    <!-- start home -->
+   <header class="d-flex justify-content-center align-items-center">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="text-white">Welcome to Selecao</h1>
+            <p class="text-center text-white p-3 mb-3 m-auto">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <button type="button" class="btn rounded-pill text-white">Read More</button>
+        </div>
+        <!-- wave -->
+        <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+    </div>
+   </header>
+    <!-- end home -->
+    <!-- start About section -->
+    <section class="about m-5">
+        <div class="container">
+          <div class="section-title  position-relative">
+            <h2 class="text-black-50">About</h2>
+            <h1 class="pb-4">WHO WE ARE</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m11.602 13.76l1.412 1.412l8.466-8.466l1.414 1.415l-9.88 9.88l-6.364-6.365l1.414-1.414l2.125 2.125l1.413 1.412Zm.002-2.828l4.952-4.953l1.41 1.41l-4.952 4.953l-1.41-1.41Zm-2.827 5.655L7.364 18L1 11.636l1.414-1.414l1.413 1.413l-.001.001l4.951 4.951Z"/></svg> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m11.602 13.76l1.412 1.412l8.466-8.466l1.414 1.415l-9.88 9.88l-6.364-6.365l1.414-1.414l2.125 2.125l1.413 1.412Zm.002-2.828l4.952-4.953l1.41 1.41l-4.952 4.953l-1.41-1.41Zm-2.827 5.655L7.364 18L1 11.636l1.414-1.414l1.413 1.413l-.001.001l4.951 4.951Z"/></svg> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m11.602 13.76l1.412 1.412l8.466-8.466l1.414 1.415l-9.88 9.88l-6.364-6.365l1.414-1.414l2.125 2.125l1.413 1.412Zm.002-2.828l4.952-4.953l1.41 1.41l-4.952 4.953l-1.41-1.41Zm-2.827 5.655L7.364 18L1 11.636l1.414-1.414l1.413 1.413l-.001.001l4.951 4.951Z"/></svg> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <button type="button" class="btn secondary-btn">Learn More</button>
+            </div>
+          </div>
+          </div>
+    </section>
+          <!-- end section -->
+          <!-- start feature -->
+          <sectio class="features mt-5">
+            <div class="container">
+                <ul class="list-unstyled d-flex justify-content-center align-items-center p-3">
+                    <li class="active rounded-pill">ALL</li>
+                    <li class="rounded-pill">Best Seller</li>
+                    <li class="rounded-pill">featured</li>
+                    <li class="rounded-pill">New arrived</li>
+                </ul> 
+             </div>
+          </section>
+     <!-- End feature section -->
+     <!-- start call section  -->
+     <div class="section-call text-start pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-start">
+            <h2 class="text-white">Call To Action</h2>
+            <p class="text-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+            <div class="col-lg-3 p-5  text-center">
+                <a class="btn rounded-pill main-btn" href="#">Call To Action</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+      <!-- end call section  -->
+</body>
+<script></script>
 
-    </body>
-    <script></script>
 </html>

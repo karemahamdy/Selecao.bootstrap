@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: rgb(239, 102, 3);
+  --main-background: rgb(51, 54, 74);
+}
+.main-btn {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+}
+svg{
+    color: var(--main-color);
+}
+.section-title  h2{
+    font-size: 14px;
+}
+.section-title  h2::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: 50px;
+    top: 7px;
+    background-color: var(--main-color);
+}
+/* start home and nav */
+nav {
+  background-color: var(--main-background);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar a {
+  padding: 5px 15px 7px;
+}
+.navbar li {
+  margin-left: 5px;
+  font-size: 14px;
+}
+.navbar .active,
+.navbar li:hover {
+  background-color: var(--main-color);
+  border-radius: 50px;
+ 
+}
+
+header {
+  background-color: var(--main-background);
+  height: 100vh;
+}
+
+header p {
+  width: 60%;
+}
+.button {
+  outline: var(--main-color);
+}
+
+.ocean {
+  height: 80px; /* change the height of the waves here */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+
+.wave {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='rgb(51, 54, 74)'/%3E%3C/svg%3E");
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(2) {
+  bottom: 0;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.5;
+}
+
+.wave:nth-of-type(3) {
+  bottom: 0;
+  animation: wave 20s -1s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* end home and nav */
+
+/* start section about */
+section h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: #2a2c39;
+}
+section .secondary-btn{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+section .secondary-btn:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+/* end section about */
+
+.section-call{
+    background-color: var(--main-background);
+}
