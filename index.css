@@ -182,7 +182,7 @@ section .secondary-btn:hover {
   font-size: 35px;
 }
 
-.feature .nav-link h4:hover {
+.feature .nav-link h4:not(.active):hover {
   color: var(--main-color);
 }
 
@@ -466,6 +466,16 @@ section .secondary-btn:hover {
 }
 
 /* end pricing section */
+.faq .section-title h2::after {
+  width: 91px;
+  left: 37px;
+  top: 10px;
+}
+.faq .faq-list li {
+  border-bottom: 1px solid #ececf1;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
 /* start contact */
 .contact {
   background-color: #eee;
@@ -603,4 +613,23 @@ input:focus{
 
 #footer span {
   color: var(--main-color);
+}
+/* end footer */
+/* up button */
+.up {
+  position: fixed;
+  bottom: 10px;
+  right: -50px;
+  background-color: #ff5722;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  font-family: Arial, Tahoma;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.up.show {
+  right: 10px;
 }
