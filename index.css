@@ -24,7 +24,9 @@
 svg {
   color: var(--main-color);
 }
-
+li {
+  list-style: none;
+}
 .section-title h2 {
   font-size: 14px;
   color: #aaaaaa;
@@ -277,8 +279,197 @@ section .secondary-btn:hover {
 }
 
 /* end portfolio */
+/* start terminol */
+.testimonials .section-title h2::after {
+  width: 91px;
+  left: 113px;
+  top: 10px;
+}
 
+.testimonials .slide {
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 32px;
+  user-select: none;
+  margin-bottom: 64px;
+}
+
+.testimonials .slide p {
+  margin: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.testimonials .slide p i {
+  line-height: 2;
+  font-size: 20px;
+  color: var(--main-color);
+  margin: 5px;
+}
+
+.testimonials .slide .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 15px;
+}
+
+.testimonials .slide .user img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 2.5px;
+}
+
+.testimonials .slide .user .user-info {
+  text-align: center;
+}
+
+.testimonials .slide .user .user-info h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid var(--main-color);
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--main-color);
+}
+
+/* end terminol */
+/* start pricing section */
+.pricing  .section-title h2::after {
+  width: 91px;
+  left: 65px;
+  top: 10px;
+}
+.pricing .plan {
+  position: relative;
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pricing h3 {
+  font-weight: 400;
+  margin: -20px -20px 25px -20px;
+  padding: 30px 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  background-color: rgb(204, 204, 204, 0.3);
+}
+
+.pricing .plans p {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  color: var(--main-color);
+}
+
+.pricing p .dollar {
+  position: absolute;
+  font-size: 20px;
+  top: -5px;
+  left: 33px;
+}
+
+.pricing p .text {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing ul {
+  color: #222;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.pricing ul li {
+  padding-bottom: 20px;
+}
+
+
+.pricing ul .disabled {
+  text-decoration: line-through;
+  color: #a2a2a2e7;
+}
+
+.pricing .btn-back {
+  margin: 20px -20px -20px -20px;
+  padding: 20px 15px;
+  background-color: rgb(204, 204, 204, 0.3);
+  text-align: center;
+}
+
+.pricing .pricing-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 35px 10px 35px;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.pricing .pricing-btn:hover {
+  background: #fc8129;
+}
+
+.pricing .selected-plan {
+  border: 2px solid var(--main-color);
+}
+
+.pricing .selected-plan h3 {
+  color: #fff;
+  background: var(--main-color);
+}
+
+.pricing .advanced {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: var(--main-color);
+  color: #fff;
+}
+
+/* end pricing section */
 /* start contact */
+.contact {
+  background-color: #eee;
+}
 .contact .content {
   width: 100%;
 }
